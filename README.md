@@ -48,7 +48,7 @@ Killing time
                                             cin >> money;
                                             if (money > 5)
                                             {
-                                                       cout << "Nice! I can buy a coffee and wait for him." << endl;
+                                                       cout << "Nice! I can get a coffee." << endl;
                                             }
                                             else
                                             {
