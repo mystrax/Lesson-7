@@ -62,3 +62,53 @@ Killing time
                                  return 0;
 
                       }
+                      
+Earthquake
+
+           #include <iostream>
+           using namespace std;
+           int main()
+           {
+               int theMagni;
+               cout << "State the magnitude of the earthquake.\n";
+               cin >> theMagni;
+
+               if (theMagni <= 2.0)
+               {
+                   cout << "the Earthquake is considered: Micro\n";
+               }
+               else if ((theMagni > 1.99) && (theMagni < 3.0))
+               {
+                   cout << "The Earthquake is considered: Very Minor\n";
+               }
+               else if ((theMagni > 2.99) && (theMagni < 4.0))
+               {
+                   cout << "The Earthquake is considered: Minor\n";
+               }
+               else if ((theMagni > 3.99) && (theMagni< 5.0))
+               {
+                   cout << "The Earthquake is considered: Light\n";
+               }
+               else if ((theMagni > 4.99) && (theMagni < 6.0))
+               {
+                   cout << "The Earthquake is considered: Moderate\n";
+               }
+               else if ((theMagni > 5.99) && (theMagni < 7.0))
+               {
+                   cout << "The Earthquake is considered: Strong\n";
+               }
+               else if ((theMagni > 6.99) && (theMagni < 8.0))
+               {
+                   cout << "The Earthquake is a considered: Major\n";
+               }
+               else if ((theMagni > 7.99) && (theMagni < 10.0))
+               {
+                   cout << "The Earthquake is considered: Great\n";
+               }
+               else
+               {
+                   cout << "The Earthquake is a Meteoric.\n";
+               }
+
+           }
+
