@@ -119,8 +119,8 @@ Letter checker vowel, consonant and special characters advance.
 #include <iostream>
 using namespace std;
 
-                      int main()
-                      {
+                                 int main()
+                                 {
 
                                  char l;
                                  int count1, count2; // variable for isalpha
