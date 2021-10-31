@@ -116,38 +116,85 @@ Earthquake
 Letter checker vowel, consonant and special characters advance.
 
 
-#include <iostream>
-using namespace std;
+           ##include <iostream>
+           using namespace std;
 
-                                 int main()
-                                 {
+           int main()
+           {
 
-                                 char l;
-                                 int count1, count2; // variable for isalpha
+                      char l;
+                      int count1, count2; // variable for isalpha
 
-                                 cout << "Enter a letter to check whether its a vowel or a consonant: ";
-                                 cin >> l;
-                                 if (l == 'a' || l == 'e' || l == 'i' || l == 'o' || l == 'u'|| l == 'A' || l == 'E' || l == 'I' || l == 'O' || l == 'U') 
-                                 {
-                                            cout << "The input is a vowel." << endl;
-                                 }
-                                 count1 = isalpha(char(l)); // Using isalpha built-in function for alphabets
-                                 count2 = isdigit(char(l)); // Using isdigit built-in function for digits
-                                 if (count1 == 0 && count2 != 4) 
-                                 {
-                                            cout << "The input is a special character." << endl;
-                                 }
-                                 else if (count1 != 2 && count2 == 4) // Checking if the entered character is a digit
-                                 {
-                                            cout << "The input is a digit." << endl;
-                                 }
-                                 else if (count1 != 0 && count2 != 4 && l != 'a' && l != 'e' && l != 'i' && l != 'o' && l != 'u' && l != 'A' && l != 'E' && l != 'I' && l != 'O' && l != 'U') 
-                                 {
-                                            cout << "The input is a consonant." << endl;
-                                 }
-                                 else
-                                 {
-                                            cout << "The input is incorrect.";
-                                                       }
-                                 return 0;
+                      cout << "Enter a letter to check whether its a vowel or a consonant: ";
+                      cin >> l;
+                      if (l == 'a' || l == 'e' || l == 'i' || l == 'o' || l == 'u'|| l == 'A' || l == 'E' || l == 'I' || l == 'O' || l == 'U') 
+                      {
+                                 cout << "The input is a vowel." << endl;
                       }
+                      count1 = isalpha(char(l)); // Using isalpha built-in function for alphabets
+                      count2 = isdigit(char(l)); // Using isdigit built-in function for digits
+                      if (count1 == 0 && count2 != 4) 
+                      {
+                                 cout << "The input is a special character." << endl;
+                      }
+                      else if (count1 != 2 && count2 == 4) // Checking if the entered character is a digit
+                      {
+                                 cout << "The input is a digit." << endl;
+                      }
+                      else if (count1 != 0 && count2 != 4 && l != 'a' && l != 'e' && l != 'i' && l != 'o' && l != 'u' && l != 'A' && l != 'E' && l != 'I' && l != 'O' && l != 'U') 
+                      {
+                                 cout << "The input is a consonant." << endl;
+                      }
+                      else
+                      {
+                                 cout << "The input is incorrect.";
+                                            }
+                      return 0;
+           }
+
+Capital of France
+
+           #include <iostream>
+           using namespace std;
+           int main()
+           {
+               cout << "What is the capital of France?\n";
+               string capital;
+               cin >> capital;
+
+               if (capital == "Paris" || capital == "paris" || capital == "PARIS")
+               {
+                   cout << "You enter the correct answer";
+               }
+               else 
+               {
+                   cout << "Sorry wrong answer";
+               }
+
+               return 0;
+           }
+Theme Park
+
+           #include <iostream>
+           using namespace std;
+           int main()
+           {
+               cout << "Please enter your height in meters to check whether you can ride or not\n";
+               double h, age;
+               cin >> h;
+               cout << "Please enter your age to check whether you can ride or not\n";
+               cin >> age;
+               if (age >= 5 && h >= 0.6)
+               {
+                   cout << "You can ride";
+               }
+               else if (age < 5 && h < 0.5)
+               {
+                   cout << "Sorry you cannot ride";
+               }
+               else
+               {
+                   cout << "Incorrect input";
+               }
+               return 0;
+           }
